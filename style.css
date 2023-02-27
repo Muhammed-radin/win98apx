@@ -1,0 +1,102 @@
+@font-face {
+  font-family: px;
+  src: url(W95FA.otf);
+}
+
+body {
+  margin: 0;
+  background: url(2320108.jpg);
+  overflow: hidden !important;
+}
+
+*{
+  font-family: px
+}
+
+.alert{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+iframe {
+  background: #fff;
+}
+
+.app-icon {
+  width: 48px;
+  height: 48px;
+  margin: 1px;
+}
+
+.app-logo {
+  width: 50px;
+  height: max-content;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow-wrap: normal;
+  overflow: hidden
+}
+
+.app-logo p {
+  margin: 0;
+  padding: 0;
+  height: 16px
+}
+
+.app-logo:hover p {
+  height: max-content
+}
+
+
+.app-logo:hover {
+  border: 1.5px dashed #ccc
+}
+
+
+.home {
+  width: 99.5%;
+  height: 99.5vh;
+  overflow: hidden
+}
+
+.home * {
+  color: #fff
+}
+
+footer {
+  background: #111;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 35px;
+  color: #fff;
+  display: flex;
+  flex-direction: row
+}
+
+footer p{
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+p {
+  margin: 0.1rem;
+  padding: 0.1rem;
+}
+
+progress {
+  width: 180px;
+  height: 15px;
+  border-radius: 0;
+}
+
+::-webkit-progress-bar{
+  background: #eee;
+  border-radius: 0;
+}
