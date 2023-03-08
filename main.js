@@ -186,6 +186,20 @@ var saverTime = setInterval(function() {
     })
   })
 
+  function moveWindowMouse(evt) {
+      e = evt
+      document.querySelectorAll(".movable")[index].style.top = e.clientY + (document.querySelectorAll(".movable")[index].offsetHeight / 2) + "px";
+      document.querySelectorAll(".movable")[index].style.left = e.clientX + 'px'
+      //- this.offsetWidth / 2 + "px";
+    }
+    elem.addEventListener('mousedown', function(e) {
+      elem.addEventListener('mousemove', moveWindowMouse)
+    })
+    elem.addEventListener('mouseup', function(e) {
+      elem.removeEventListener('mousedown', moveWindowMouse)
+    })
+  })
+
   window.onhashchange = function() {
     if (window.location.origin + '/index.html' == window.location.href) {
       window.location.reload()
