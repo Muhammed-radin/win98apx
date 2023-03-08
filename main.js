@@ -193,7 +193,7 @@ var saverTime = setInterval(function() {
   }
   
   
-  localStorage.setItem('apps', JSON.stringify(system.apps))
+  localStorage.setItem('apps', JSON.stringify(system.apps == null ? [] : system.apps == [] ? []: system.apps ))
 }, 1000)
 
 function openRun() {
